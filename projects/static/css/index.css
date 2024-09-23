@@ -190,3 +190,23 @@ body {
   display: table;
   clear: both;
 }
+
+.teaser-carousel {
+  overflow: hidden; /* Hide previous/next images */
+}
+
+.carousel-item {
+  width: 100%; /* Ensure the carousel item takes full width */
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%; /* Ensure the image fills the item container */
+  object-fit: cover;
+  /* height: 400px; Adjust this height as needed */
+}
+
+/* Optional: If you want to hide navigation arrows, comment out this section */
+/* .carousel-nav-left, .carousel-nav-right {
+  display: none;
+} */

@@ -178,27 +178,39 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<section class="hero teaser has-carousel">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="hero is-centered">
-        <img src="./static/images/teaser.png" alt="Teaser image" class="teaser"/>
+      <div class="hero-body">
+          <div id="carousel-demo" class="teaser-carousel" data-autoplay="true">
+              <div class="carousel-item">
+                <img src="./static/images/teaser1.png" alt="Teaser image 1" class="teaser"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/images/teaser2.png" alt="Teaser image 2" class="teaser"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/images/teaser3.png" alt="Teaser image 3" class="teaser"/>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/images/teaser4.png" alt="Teaser image 4" class="teaser"/>
+              </div>
+          </div>
+          <h2 class="subtitle has-text-centered">
+              <b>Generated images by our proposed MaskBit.</b>
+              We showcase samples from MaskBit trained on ImageNet at 256<span> &#215;</span> 256 resolution.
+          </h2>
       </div>
-      <h2 class="subtitle has-text-centered">
-        <b>Generated images by our proposed MaskBit.</b>
-        We showcase samples from MaskBit trained on ImageNet at 256<span> &#215;</span> 256 resolution.
-      </h2>
-      <br>
-      <!-- <img src="./static/images/titok_teaser.png"
-                class="teaser"
-                alt="teaser image."/> -->
-<!--       <img src="./static/images/speed_vs_perf.png"
-                class="teaser"
-                alt="teaser image."/> -->
-    </div>
   </div>
 </section>
 
+<script>
+  bulmaCarousel.attach('#carousel-demo', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    autoplay: true,
+    infinite: true,
+  });
+</script>
 
 
 <section class="hero is-light is-big", style="margin-top: -35px">
